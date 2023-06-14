@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    ul,li
+
+        {
+            height: 20px;
+            
+            
+            background: cyan;
+            text-align: center;
+            display: inline;
+            word-spacing: 20px;
+            font-size: small;
+            margin-right: 20px;
+            position: relative;
+            padding: 20px 0px;
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li::after
+        
+        
+        {
+            height: 5px;
+            width: 0px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .3s;
+
+        }
+
+        li:hover::after
+        {
+            transition: 2s;
+            left: 10px;
+
+
+
+        }
+        .menu
+        {
+            border: 3px solid black;
+            width: 100%;
+            transition: 3s;
+           
+        }
+
+
+        li:hover.effect
+
+        {
+             /* width: 100px; */
+             /* right: 0; */
+             /* transition: 4s; */
+
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+            <ul class="menu">
+                
+            <li>home</li>
+            <li>about</li>
+            <li>service</li>
+            <ul class="sub-menu">
+
+                
+                <li>service 1</li>
+                <li>service 2</li>
+                <li>service 3</li>
+                <li>service 4</li>
+                </ul> 
+            </li>
+            <li>contact</li>
+            </ul> 
+        
+
+         
+</body>
+</html>
