@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+
+        {
+            background: cyan;
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 50px black;
+            margin: auto;
+            position: relative;
+            top: 150px;
+        }
+
+        .front
+
+        {
+            height: 300px;
+            width: 500px;
+            background: rgba(191, 192, 192, 0.53);
+            transition: 1s;
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+        }
+
+        .back
+
+        {
+            height: 300px;
+            width: 500px;
+            /* background: gray; */
+            transition: 1s;
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateX(0deg);
+        }
+
+        .main:hover .front
+
+        {
+            transform: rotateY(0deg);
+
+        }
+        .main:hover .back
+
+        {
+            transform: rotateX(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="front">
+        <img src="https://images.wallpapersden.com/image/download/lamborghini_bGdsbmiUmZqaraWkpJRobWllrWdma2U.jpg" alt=""height="300px" width="500px">
+    </div>
+        <div class="back">
+            <img src="https://th.bing.com/th/id/OIP.byNjYsLMgo3aWWXXTHWldwHaE8?pid=ImgDet&rs=1" alt=""height="300px" width="500px">
+        
+        </div>
+    </div>
+</body>
+</html>
