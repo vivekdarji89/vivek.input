@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body
+        {
+            min-height: 100vh;
+            /* background: lightgray; */
+            
+            
+        }
+        .title
+        {
+            text-align: center;
+            color: red;
+        }
+        .container
+        {
+            min-width: 100vh;
+            width: 100%;
+            background: lightgray;
+            padding: 25px 30px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="title"><u>Student Registration Form</u></div>
+    <div class="container">
+        <div class="user details">
+            <span class="details">Full Name:</span>
+            <input type="text" placeholder="Enter Your First Name" required>
+        
+        </div>
+        <div class="user details">
+            <span class="details">Last Name:</span>
+            <input type="text" placeholder="Enter Your Last Name" required>
+            
+        </div>
+        <div class="user details">
+            <span class="details">Email:</span>
+            <input type="text" placeholder="it should conatin @.." required>
+            
+        </div>
+        <div class="user details">
+            <span class="details">Mobile:</span>
+            <input type="text" placeholder="only 10 digits are allowed" required>
+            
+        </div>
+        <div class="gender details">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+        </div>
+        <div class="gender details">
+            <span class="dot one"></span>
+            <span class="gender">Female</span>
+        </div>
+        <div class="date">
+            <span class="date of birth">Date of Birth:</span>
+            <input type="date" required>
+        </div>
+        <div class="Address">
+            <span class="Ad">Address:</span>
+            <textarea rows="10" cols="50"></textarea>
+        </div>
+        <div class="city">
+        <span class="details city">City:</span>
+        <input type="text" required>
+    </div>
+    <div class="city">
+        <span class="details city">Area Pin:</span>
+        <input type="text" required>
+    </div>
+    <div class="city">
+        <span class="details city">State:</span>
+        <input type="text" required>
+    </div>
+    <div class="Qualification">
+        <span class="education">Qualification:</span>
+        <select>
+             <option>Select Qualification</option>
+             <option>10th</option>
+             <option>10+2</option>
+             <option>Graduation</option>
+             <option>PostGraduation</option>
+           </select>
+    </div>
+     <div class="Specialization">
+        <span class="specs">Specialization:</span><br>
+        <input type="checkbox" Computer Science>Computer Science<br>
+                    <input type="checkbox" Information Technology>Information Technology<br>
+                    <input type="checkbox" Computer Architecture>Computer Architecture<br>
+                    <input type="checkbox" Tele Communication>Tele Communication<br>
+     </div>
+     <div class="password">
+        <span class="pass">Password:</span>
+        <input type="password" required>
+
+     </div>
+     <div class="button">
+        <input type="submit" value="Registered">
+    </div>
+     </div>
+    </div>
+        
+   
+
+</html>
