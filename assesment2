@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        lable{
+            width: 150px;
+            display: inline-block;
+            height: 10px;
+        }
         
         body
         {
@@ -25,63 +30,67 @@
             background: lightgray;
             padding: 25px 30px;
             border-radius: 5px;
+            
         }
+    
+        
+        
+        
         
     </style>
 </head>
 <body>
     <div class="title"><u>Student Registration Form</u></div>
     <div class="container">
-        <div class="user details">
-            <span class="details">Full Name:</span>
+        <div class="user details"> 
+            <lable>First Name:</lable>
             <input type="text" placeholder="Enter Your First Name" required>
-        
+            
         </div>
-        <div class="user details">
-            <span class="details">Last Name:</span>
+        
+        <div class="user details"> 
+            <lable>Last Name:</lable>
             <input type="text" placeholder="Enter Your Last Name" required>
             
         </div>
         <div class="user details">
-            <span class="details">Email:</span>
+            <lable>Email:</lable>
             <input type="text" placeholder="it should conatin @.." required>
             
         </div>
         <div class="user details">
-            <span class="details">Mobile:</span>
+            <lable>Mobile:</lable>
             <input type="text" placeholder="only 10 digits are allowed" required>
             
         </div>
         <div class="gender details">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-        </div>
-        <div class="gender details">
-            <span class="dot one"></span>
-            <span class="gender">Female</span>
+            <lable>Gender:</lable>
+            <input type="radio" name="gender">male
+            <input type="radio" name="gender">female
+            
         </div>
         <div class="date">
-            <span class="date of birth">Date of Birth:</span>
+            <lable>Date of Birth:</lable>
             <input type="date" required>
         </div>
         <div class="Address">
-            <span class="Ad">Address:</span>
+            <lable>Address:</lable>
             <textarea rows="10" cols="50"></textarea>
         </div>
         <div class="city">
-        <span class="details city">City:</span>
+        <lable>City:</lable>
         <input type="text" required>
     </div>
     <div class="city">
-        <span class="details city">Area Pin:</span>
+        <lable>Area Pin:</lable>
         <input type="text" required>
     </div>
     <div class="city">
-        <span class="details city">State:</span>
+        <lable>State:</lable>
         <input type="text" required>
     </div>
     <div class="Qualification">
-        <span class="education">Qualification:</span>
+        <lable>Qualification:</lable>
         <select>
              <option>Select Qualification</option>
              <option>10th</option>
@@ -91,19 +100,20 @@
            </select>
     </div>
      <div class="Specialization">
-        <span class="specs">Specialization:</span><br>
-        <input type="checkbox" Computer Science>Computer Science<br>
-                    <input type="checkbox" Information Technology>Information Technology<br>
-                    <input type="checkbox" Computer Architecture>Computer Architecture<br>
-                    <input type="checkbox" Tele Communication>Tele Communication<br>
+        <lable>Specialization:</lable>
+        <input type="checkbox" Computer Science>Computer science
+        <input type="checkbox" information technology>information technology
+        <input type="checkbox" Computer Architecture>Computer Architectur
+        <input type="checkbox" Tele Communication>Tele Communication
+        
      </div>
      <div class="password">
-        <span class="pass">Password:</span>
+        <lable>Password:</lable>
         <input type="password" required>
 
      </div>
      <div class="button">
-        <input type="submit" value="Registered">
+        <input type="submit" value="Registered" style="background: lightgreen;">
     </div>
      </div>
     </div>
