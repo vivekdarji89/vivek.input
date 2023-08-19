@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: gray;
+        } 
+        .solid{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border: 10px solid red;
+            color: aliceblue;
+            display: inline-block;
+            margin: 10px;
+        }
+        .dashed{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border: 10px dashed cyan;
+            color: yellow;
+            display: inline-block; 
+            margin: 10px;   
+        }
+        .thick{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border: 10px double cyan;
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+        .ridge{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border: 10px ridge orange;
+            display: inline-block;
+            color: red;
+            margin: 10px;
+        }
+        .horizontal{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border-block: 10px solid red;
+            display: inline-block;
+            color: aqua;
+            margin: 10px;
+        }
+        .vertical{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border-right: 10px solid red;
+            border-left: 10px solid red;
+            display: inline-block;
+            color: blueviolet;
+            margin: 10px;
+        }
+        .color1{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border-block: 10px solid blue;
+            display: inline-block;
+            color: aliceblue;
+            border-left: 10px solid rgb(56, 151, 104);
+            border-right: 10px solid rgb(56, 151, 104);
+            margin: 10px;
+        }
+        .color2{
+            height: 200px;
+            width: 200px;
+            background: black;
+            border-block: 10px ridge orange;
+            margin: 10px;
+            display: inline-block;
+            border-left: 10px ridge red;
+            border-right: 10px ridge red;
+            color: aliceblue;
+        }
+        .color3{
+            height: 185px;
+            width: 200px;
+            background: black;
+            border-block-end: 20px solid red;
+            color: aliceblue;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+        <div class="solid">border-solid</div>
+        <div class="dashed">border dashed</div>
+        <div class="thick">border-thick</div>
+        <div class="ridge">border-ridge</div>
+        <div class="horizontal">border-block-horizontal</div>
+        <div class="vertical">border-block-vertical</div>
+        <div class="color1">border-block-color-vertical</div>
+        <div class="color2">border-block-color-horizontal</div>
+        <div class="color3">border-block-end-horizontal</div>
+</body>
+</html>
